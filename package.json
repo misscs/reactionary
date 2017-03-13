@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "Reactionary",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "React directory organization proposal for route based apps",
   "main": "index.js",
   "repository": {},
@@ -13,8 +13,7 @@
     "start": "webpack-dev-server",
     "test": "jest --coverage",
     "test:update": "jest -u --coverage",
-    "test:watch": "jest --watch --coverage",
-    "postversion": "git push && git push --tags"
+    "test:watch": "jest --watch --coverage"
   },
   "dependencies": {
     "apisauce": "^0.10.0",
