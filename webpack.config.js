@@ -23,6 +23,7 @@ const plugins = [
   new HtmlWebpackPlugin({
     template: sourcePath + '/root.ejs',
     production: isProd,
+    title: "Reactionary | React Structure",
     inject: true,
   }),
 ];
