@@ -9,9 +9,9 @@ import {
   loginFailure,
   initialState,
   loginReducer
-} from '../LoginReducer'
+} from 'routes/Login/LoginRedux'
 
-import Types from '../LoginReducer'
+import Types from 'routes/Login/LoginRedux'
 
 import configureStore from "configureStore"
 

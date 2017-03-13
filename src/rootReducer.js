@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
 import { routerReducer } from 'react-router-redux'
 
-import { loginReducer } from "routes/Login/LoginReducer"
+import { loginReducer } from "routes/Login/LoginRedux"
 import { dashboardReducer } from "routes/Dashboard/DashboardRedux"
 
 const rootReducer = combineReducers({

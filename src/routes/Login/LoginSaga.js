@@ -9,7 +9,7 @@ import {
   loginSuccess,
   loginFailure,
   setToken
-} from 'routes/Login/LoginReducer'
+} from 'routes/Login/LoginRedux'
 
 const getUsername = state => state.login.username
 

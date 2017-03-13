@@ -10,7 +10,7 @@ import { connect } from 'react-redux'
 import {
   changeUsername,
   loginRequest
-} from 'routes/Login/LoginReducer'
+} from 'routes/Login/LoginRedux'
 
 import LoginForm from './LoginForm'
 import Input from 'components/Input'

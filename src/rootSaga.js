@@ -3,7 +3,7 @@ import { call, put, takeLatest } from 'redux-saga/effects'
 import { login } from 'routes/Login/LoginSaga'
 import { getReposFlow } from 'routes/Dashboard/DashboardSaga'
 
-import LoginTypes from 'routes/Login/LoginReducer'
+import LoginTypes from 'routes/Login/LoginRedux'
 import API from './api'
 
 const api = API.create()

@@ -5,7 +5,7 @@ import { createStructuredSelector } from 'reselect'
 import List from 'components/List'
 import { RepoListItem } from './components/RepoListItem'
 
-import { setToken } from 'routes/Login/LoginReducer'
+import { setToken } from 'routes/Login/LoginRedux'
 import { getRepos } from './DashboardSelectors'
 
 export class DashboardContainer extends React.PureComponent {
