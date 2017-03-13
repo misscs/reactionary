@@ -17,3 +17,9 @@ React project organization proposal for large-scale, route based apps.
 ### Watch tests
 
 `yarn test:watch`
+
+## Todos
+
+- [ ] Implement 2nd half of code splitting in router
+- [ ] Stylelinter
+- [ ] Moar tests
