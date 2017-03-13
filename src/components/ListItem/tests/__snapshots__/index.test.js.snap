@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ListItem /> should render the content passed to it 1`] = `
+<li>
+  <div>
+    Hello world!
+  </div>
+</li>
+`;

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> should render 1`] = `
+<div>
+  <header>
+    <div
+      className="logo cUhtom"
+    >
+      <span>
+        CC
+      </span>
+    </div>
+    <div
+      className="cUhtom"
+    >
+      Register
+    </div>
+  </header>
+  <main
+    id="container"
+  />
+</div>
+`;

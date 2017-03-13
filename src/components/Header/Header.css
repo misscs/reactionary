@@ -1,0 +1,10 @@
+header {
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.logo {
+  margin-right: auto;
+}

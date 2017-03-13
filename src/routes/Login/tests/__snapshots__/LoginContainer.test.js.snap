@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LoginContainer /> should render 1`] = `
+<section>
+  <form
+    className="gtjRNO"
+  >
+    <legend>
+      Browse Github User Repos
+    </legend>
+    <label
+      htmlFor="username"
+    >
+      Username
+    </label>
+    <input
+      className="dALZPB"
+      id="username"
+      onChange={[Function]}
+      placeholder="Github username"
+      type="text"
+      value={undefined}
+    />
+    <button
+      onClick={[Function]}
+    >
+      Octomagic
+    </button>
+  </form>
+</section>
+`;

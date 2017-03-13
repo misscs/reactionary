@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dashboard comonents: <RepoList /> & <RepoListItem /> <RepoList /> should not render when nothing is passed 1`] = `null`;
+
+exports[`Dashboard comonents: <RepoList /> & <RepoListItem /> <RepoList /> should render a list of repositories 1`] = `
+<div
+  className="gHWurn"
+>
+  <ul
+    className="iKHmLl"
+  >
+    <li>
+      <article
+        className="repo-list-item"
+      >
+        <h3>
+          posthtml-postcss-modules
+        </h3>
+        <p>
+          PostCSS CSS Modules Plugin
+        </p>
+      </article>
+    </li>
+    <li>
+      <article
+        className="repo-list-item"
+      >
+        <h3>
+          posthtml-postcss-modules
+        </h3>
+        <p>
+          PostCSS CSS Modules Plugin
+        </p>
+      </article>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Dashboard comonents: <RepoList /> & <RepoListItem /> <RepoListItem /> should render one repository list item 1`] = `
+<li>
+  <article
+    className="repo-list-item"
+  >
+    <h3>
+      posthtml-postcss-modules
+    </h3>
+    <p>
+      PostCSS CSS Modules Plugin
+    </p>
+  </article>
+</li>
+`;

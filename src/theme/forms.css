@@ -1,0 +1,33 @@
+/**
+ * @overview Base form styles
+ */
+
+label {
+  font-size: 1.2em;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #8787AE;
+}
+
+input {
+  appearance: none;
+  background-color: #ffffff;
+  border-radius: 3px;
+  border: 1px solid #b7b7b6;
+  color: #636260;
+  display: block;
+  font-size: 1em;
+  line-height: 1.2;
+  margin: 0;
+  width: 100%;
+  outline: none;
+  padding: 0.8em;
+  text-overflow: ellipsis;
+  transition: all 0.2s ease-in-out, opacity 0.15s ease-in-out;
+}
+
+button {
+  
+}

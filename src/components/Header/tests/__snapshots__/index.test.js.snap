@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should only render the logo when logged out 1`] = `
+<header>
+  <div
+    className="logo cUhtom"
+  >
+    <span>
+      CC
+    </span>
+  </div>
+  <div
+    className="cUhtom"
+  >
+    Register
+  </div>
+</header>
+`;
+
+exports[`<Header /> should render <Badge /> when logged in 1`] = `
+<header>
+  <div
+    className="logo cUhtom"
+  >
+    <span>
+      CC
+    </span>
+  </div>
+  <div
+    className="cUhtom"
+  >
+    <article
+      className="badge"
+    >
+      <div
+        className="avatar"
+      />
+      <div
+        className="badge-content"
+      />
+    </article>
+  </div>
+</header>
+`;
