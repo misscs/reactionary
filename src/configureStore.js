@@ -2,8 +2,8 @@ import { applyMiddleware, createStore, compose } from 'redux'
 import { composeWithDevTools } from 'redux-devtools-extension/logOnlyInProduction'
 import createSagaMiddleware from 'redux-saga'
 
-import rootReducer from 'routes/Root/rootReducer'
-import rootSaga from 'routes/Root/rootSaga'
+import rootReducer from 'routes/Root/RootReducer'
+import rootSaga from 'routes/Root/RootSaga'
 
 const sagaMiddleware = createSagaMiddleware()
 

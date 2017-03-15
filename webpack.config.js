@@ -29,7 +29,7 @@ const plugins = [
 ]
 
 const jsEntry = [
-  'main',
+  'index',
   'routes/Dashboard/DashboardContainer',
   'routes/Login/LoginContainer'
 ]
@@ -134,7 +134,7 @@ module.exports = {
   },
   plugins: plugins,
   devServer: {
-    contentBase: './src',
+    contentBase: sourcePath,
     historyApiFallback: true,
     port: 3000,
     hot: true,
