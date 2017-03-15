@@ -4,7 +4,7 @@ import { login } from 'routes/Login/LoginSaga'
 import { getReposFlow } from 'routes/Dashboard/DashboardSaga'
 
 import LoginTypes from 'routes/Login/LoginRedux'
-import API from './api'
+import API from 'api'
 
 const api = API.create()
 
@@ -14,7 +14,7 @@ const api = API.create()
 const rootSaga = function* () {
   yield [
     takeLatest(LoginTypes.LOGIN_REQUEST, login, api),
-    takeLatest(LoginTypes.SET_TOKEN, getReposFlow, api),
+    takeLatest(LoginTypes.SET_TOKEN, getReposFlow, api)
   ]
 }
 

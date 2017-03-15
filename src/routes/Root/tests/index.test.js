@@ -3,11 +3,10 @@ import { Provider } from 'react-redux'
 import { shallow } from 'enzyme'
 import renderer from 'react-test-renderer'
 
-import App from 'components/App'
+import RootContainer from 'routes/Root/RootContainer'
 import configureStore from 'configureStore'
 
-describe('<App />', () =>{
-
+describe('<RootContainer />', () => {
   let store
   beforeEach(() => {
     store = configureStore()
@@ -15,12 +14,12 @@ describe('<App />', () =>{
 
   it(`should render`, () => {
     const component = renderer.create(
-    <Provider store={store}>
-      <App />
-    </Provider>
+      <Provider store={store}>
+        <RootContainer />
+      </Provider>
     )
 
-    const tree=component.toJSON()
+    const tree = component.toJSON()
     expect(tree).toMatchSnapshot()
   })
 
@@ -28,9 +27,9 @@ describe('<App />', () =>{
     const children = (<h1>Test</h1>)
     const component = shallow(
       <Provider store={store}>
-        <App>
+        <RootContainer>
           {children}
-        </App>
+        </RootContainer>
       </Provider>
     )
     expect(component.contains(children)).toBe(true)
