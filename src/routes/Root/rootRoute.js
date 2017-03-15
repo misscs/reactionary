@@ -1,4 +1,4 @@
-import App from 'components/App'
+import RootContainer from 'routes/Root/RootContainer'
 import DashboardContainer from 'routes/Dashboard/DashboardContainer'
 import LoginContainer from 'routes/Login/LoginContainer'
 
@@ -7,7 +7,7 @@ import LoginContainer from 'routes/Login/LoginContainer'
 const rootRoute = {
 
   path: '/',
-  component: App,
+  component: RootContainer,
   indexRoute: {
     component: LoginContainer
   },

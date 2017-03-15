@@ -10,10 +10,10 @@ import {
   getUsername
 } from 'routes/Login/LoginSelectors'
 
-import './App.css'
+import './Root.css'
 
-class App extends React.Component {
-  render() {
+export class RootContainer extends React.Component {
+  render () {
     return (
       <div>
         <Header
@@ -21,7 +21,7 @@ class App extends React.Component {
           isFetching={this.props.isFetching}
           name={this.props.name}
         />
-        <main id="container">
+        <main id='container'>
           {this.props.children}
         </main>
       </div>
@@ -29,8 +29,8 @@ class App extends React.Component {
   }
 }
 
-App.propTypes = {
-  children: React.PropTypes.node,
+RootContainer.propTypes = {
+  children: React.PropTypes.node
 }
 
 const mapStateToProps = createStructuredSelector({
@@ -39,4 +39,4 @@ const mapStateToProps = createStructuredSelector({
   name: getUsername()
 })
 
-export default connect(mapStateToProps)(App)
+export default connect(mapStateToProps)(RootContainer)

@@ -5,7 +5,6 @@ import { Provider } from 'react-redux'
 import { Router, browserHistory } from 'react-router'
 import { syncHistoryWithStore } from 'react-router-redux'
 
-import App from 'components/App'
 import configureStore from './configureStore'
 import rootRoute from 'routes/Root/rootRoute'
 
@@ -24,14 +23,3 @@ ReactDOM.render(
   ,
   document.getElementById('root')
 )
-
-// if (module.hot) {
-//   module.hot.accept('./components/App', () => {
-//     ReactDOM.render(
-//       <AppContainer>
-//         <App />
-//       </AppContainer>,
-//       document.getElementById('root')
-//     )
-//   })
-// }
