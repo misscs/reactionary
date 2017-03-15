@@ -1,15 +1,15 @@
-const webpack = require('webpack');
-const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack')
+const path = require('path')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-const nodeEnv = process.env.NODE_ENV || 'development';
-const isProd = nodeEnv === 'production';
+const nodeEnv = process.env.NODE_ENV || 'development'
+const isProd = nodeEnv === 'production'
 
-const sourcePath = path.join(__dirname, './src');
-const staticsPath = path.join(__dirname, './dist');
+const sourcePath = path.join(__dirname, './src')
+const staticsPath = path.join(__dirname, './dist')
 
-const extractCSS = new ExtractTextPlugin({ filename: 'style.css', disable: false, allChunks: true });
+const extractCSS = new ExtractTextPlugin({ filename: 'style.css', disable: false, allChunks: true })
 
 const plugins = [
   new webpack.optimize.CommonsChunkPlugin({
@@ -21,18 +21,18 @@ const plugins = [
     'process.env': { NODE_ENV: JSON.stringify(nodeEnv) }
   }),
   new HtmlWebpackPlugin({
-    template: sourcePath + '/root.ejs',
+    template: sourcePath + '/index.ejs',
     production: isProd,
-    title: "Reactionary | React Structure",
-    inject: true,
-  }),
-];
+    title: 'Reactionary | React Structure',
+    inject: true
+  })
+]
 
 const jsEntry = [
   'main',
   'routes/Dashboard/DashboardContainer',
-  'routes/Login/LoginContainer',
-];
+  'routes/Login/LoginContainer'
+]
 
 if (isProd) {
   plugins.push(
@@ -51,25 +51,25 @@ if (isProd) {
         dead_code: true,
         evaluate: true,
         if_return: true,
-        join_vars: true,
+        join_vars: true
       },
       output: {
         comments: false
-      },
+      }
     }),
     extractCSS
-  );
+  )
 
   jsEntry.unshift(
     'react-hot-loader/patch',
     'webpack-dev-server/client?http://localhost:3000',
     'webpack/hot/only-dev-server'
-  );
+  )
 } else {
   plugins.push(
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin()
-  );
+  )
 }
 
 module.exports = {
@@ -85,7 +85,7 @@ module.exports = {
   output: {
     path: staticsPath,
     filename: 'bundle.js',
-    publicPath: '/',
+    publicPath: '/'
   },
   module: {
     rules: [
@@ -103,7 +103,7 @@ module.exports = {
         use: isProd ?
           extractCSS.extract({
             fallbackLoader: 'style-loader',
-            loader: ['css-loader'],
+            loader: ['css-loader']
           }) :
           ['style-loader', 'css-loader']
       },
@@ -123,7 +123,7 @@ module.exports = {
         test: /\.(gif|png|jpg|jpeg\ttf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
         use: 'file-loader'
       }
-    ],
+    ]
   },
   resolve: {
     extensions: ['.js', '.jsx'],
@@ -139,6 +139,6 @@ module.exports = {
     port: 3000,
     hot: true,
     compress: isProd,
-    stats: { colors: true },
+    stats: { colors: true }
   }
-};
+}
